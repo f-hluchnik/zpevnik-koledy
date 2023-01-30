@@ -1,0 +1,59 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech, british]{babel}
+\usepackage[autostyle]{csquotes}
+\usepackage{multicol}
+\usepackage[top=1.5cm, left=2cm, right=1cm, bottom=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[osf]{garamondlibre}
+\usepackage{pdfpages}
+\usepackage{libertinus}
+\usepackage{anyfontsize}
+% poslední balík
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks=true, linkcolor=gray}
+ 
+% příkazy pro hypertextové odkazy
+\newcommand{\hylo}[2]{\hyperlink{#1}{#2}}
+\newcommand{\hyl}[2]{\vspace{-15pt}\hspace{28pt}\hyperlink{#1}{\textbf{$\rightarrow$#2}}}
+\newcommand{\hyt}[1]{\hypertarget{#1}{}}
+
+\def\everypar{\parindent=0mm} % předsazení prvního řádku odstavce
+
+ \newcommand*{\myPath}{pisnicky/c} % předpona cesty pro c
+% \newcommand*{\myPath}{pisnicky/b} % předpona cesty pro b
+% \newcommand*{\myPath}{pisnicky/es} % předpona cesty pro es
+
+\begin{document}
+\pagestyle{empty}
+\sffamily
+\include{\myPath/_obalka.tex}
+\normalfont
+\include{vydavatelskyzaznam.tex}
+\includepdf[link=true]{\myPath/adestefideles.pdf}
+\includepdf[link=true]{\myPath/bimbam.pdf}
+\includepdf[link=true]{\myPath/chticabyspal.pdf}
+\includepdf[link=true]{\myPath/dejbuhstesti.pdf}
+\includepdf[link=true]{\myPath/dobrouzpravuhlasej.pdf}
+\includepdf[link=true]{\myPath/jabychradkbetlemu.pdf}
+\includepdf[link=true]{\myPath/jakjsikrasnenevinatko.pdf}
+\includepdf[link=true]{\myPath/jamalyprichazimkoledovat.pdf}
+\includepdf[link=true]{\myPath/mytrikralove.pdf}
+\includepdf[link=true]{\myPath/narodilsekristuspan.pdf}
+\includepdf[link=true]{\myPath/nesemvamnoviny.pdf}
+\includepdf[link=true]{\myPath/pasliovcevalasi.pdf}
+\includepdf[link=true]{\myPath/pujdemspoludobetlema.pdf}
+\includepdf[link=true]{\myPath/rolnicky.pdf}
+\includepdf[link=true]{\myPath/rychlebratri.pdf}
+\includepdf[link=true]{\myPath/slysteslystepastuskove.pdf}
+\includepdf[link=true]{\myPath/stedrejvecernastal.pdf}
+\includepdf[link=true]{\myPath/stestizdravipokojsvaty.pdf}
+\includepdf[link=true]{\myPath/tichanoc.pdf}
+\includepdf[link=true]{\myPath/vjeslichditespinka.pdf}
+\includepdf[link=true]{\myPath/vpulnocnihodinu.pdf}
+\includepdf[link=true]{\myPath/veselevanoce.pdf}
+\includepdf[link=true]{\myPath/veselevanocnihody.pdf}
+\includepdf[link=true]{\myPath/vzhurubratrimili.pdf}
+\include{obsah}
+\end{document}
